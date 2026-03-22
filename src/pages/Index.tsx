@@ -61,28 +61,36 @@ function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"}`}>
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="font-display text-xl font-semibold text-primary tracking-tight">
-          M<span className="text-secondary">C</span> <span className="text-sm font-body font-light text-muted-foreground hidden sm:inline">Marlene Corrêa</span>
-        </a>
-        <div className="hidden md:flex items-center gap-8">
-          {links.map(l => (
-            <a key={l.href} href={l.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200">{l.label}</a>
-          ))}
-        </div>
-        <button onClick={() => setOpen(!open)} className="md:hidden text-foreground active:scale-95 transition-transform" aria-label="Menu">
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-      {open && (
-        <div className="md:hidden bg-background/98 backdrop-blur-sm border-t px-6 pb-6 pt-2 space-y-1">
-          {links.map(l => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block py-3 text-sm font-medium text-foreground/80 hover:text-primary border-b border-border/50 last:border-0">{l.label}</a>
-          ))}
-        </div>
-      )}
-    </nav>
+   <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"}`}>
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    {/* LOGO DA CLIENTE AQUI */}
+    <a href="#" className="flex items-center gap-2 transition-transform active:scale-95">
+      <img 
+        src="/logo-cliente.png" 
+        alt="Marlene Corrêa Logo" 
+        className="h-10 w-auto object-contain md:h-12" 
+      />
+    </a>
+
+    <div className="hidden md:flex items-center gap-8">
+      {links.map(l => (
+        <a key={l.href} href={l.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200">{l.label}</a>
+      ))}
+    </div>
+    
+    <button onClick={() => setOpen(!open)} className="md:hidden text-foreground active:scale-95 transition-transform" aria-label="Menu">
+      {open ? <X size={24} /> : <Menu size={24} />}
+    </button>
+  </div>
+  
+  {open && (
+    <div className="md:hidden bg-background/98 backdrop-blur-sm border-t px-6 pb-6 pt-2 space-y-1">
+      {links.map(l => (
+        <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block py-3 text-sm font-medium text-foreground/80 hover:text-primary border-b border-border/50 last:border-0">{l.label}</a>
+      ))}
+    </div>
+  )}
+</nav>
   );
 }
 
