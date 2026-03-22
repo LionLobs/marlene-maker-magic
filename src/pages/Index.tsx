@@ -93,15 +93,15 @@ function Hero() {
     <header ref={ref} className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div className={`space-y-6 transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`} style={{ filter: visible ? "blur(0)" : "blur(4px)" }}>
-          <p className="text-xs font-bold tracking-[0.2em] uppercase text-secondary">Transformação & Propósito</p>
+          <p className="text-xs font-bold tracking-[0.2em] uppercase text-secondary">Saúde Mental e Reconstrução Profissional</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-[3.4rem] font-semibold text-primary leading-[1.1] text-wrap-balance">
-            Reconstruir Identidade, Assumir Potência
+            Saúde Mental e Reconstrução Profissional para Mulheres 40+
           </h1>
           <p className="text-xs font-bold tracking-[0.15em] uppercase text-secondary/80">
             Marlene Corrêa — Psicanalista Clínica e Mentora Estratégica
           </p>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-            Saúde Mental e Reconstrução Profissional para Mulheres 40+. Rompa padrões, ressignifique sua história e reconstrua carreira com propósito, maturidade emocional e direção.
+            Profissional em saúde mental como psicanalista clínica e mentora estratégica, criadora do Programa Exclusivo de Reconstrução 40+, conduzo mulheres que desejam romper padrões, ressignificar sua história e reconstruir carreira com propósito, maturidade emocional e direção.
           </p>
           <div className="pt-2 space-y-2">
             <p className="text-foreground/70 text-sm">Não é apenas sobre mudança profissional.</p>
@@ -157,37 +157,37 @@ function About() {
 // ─── PROGRAMS ───
 const programs = [
   {
-    title: "Reconstrução 40+",
-    subtitle: "Método Identidade Estratégica™",
-    badge: "Sob Aplicação Seletiva",
-    description: "Processo profundo, estruturado e seletivo para mulheres 40+ que desejam reconstruir identidade, direção e propósito com estratégia e maturidade emocional.",
-    features: ["10 semanas individuais", "Diagnóstico emocional profundo", "Ressignificação de padrões", "Plano de posicionamento profissional"],
-    note: "O investimento é apresentado exclusivamente na Conversa de Alinhamento.",
+    title: "Programa Exclusivo de Reconstrução 40+",
+    subtitle: "Pelo Método Identidade Estratégica™",
+    badge: "🔒 Sob Aplicação",
+    description: "Um processo profundo, estruturado e seletivo para mulheres 40+ que desejam reconstruir identidade, direção e propósito com estratégia e maturidade emocional.",
+    features: ["10 semanas individuais", "Diagnóstico emocional e identitário profundo", "Ressignificação de padrões inconscientes", "Reconstrução estratégica de identidade", "Plano de posicionamento profissional", "Suporte personalizado durante todo o processo"],
+    note: "Este programa é destinado a mulheres comprometidas com uma reconstrução real. O investimento é apresentado exclusivamente na Conversa de Alinhamento.",
     cta: "Solicitar Aplicação",
-    waMsg: "Olá Marlene! Gostaria de saber mais sobre o Programa Reconstrução 40+. Qual é o próximo passo?",
+    waMsg: "Olá Marlene! Gostaria de solicitar aplicação para o Programa Exclusivo de Reconstrução 40+.",
     icon: Target,
     featured: true,
   },
   {
-    title: "Jornada Essencial",
-    subtitle: "Reconstrução 40+",
+    title: "Jornada Essencial de Reconstrução 40+",
+    subtitle: "Processo estruturado de 5 semanas",
     badge: "Entrada Contínua",
     description: "Processo estruturado de 5 semanas para mulheres que precisam de clareza emocional e direção estratégica para iniciar sua reconstrução.",
     features: ["5 semanas estruturadas", "Clareza emocional", "Direção estratégica", "Possibilidade de evolução"],
-    note: "Participantes podem ter parte do investimento considerado na evolução para o Programa Exclusivo.",
+    note: "Participantes que desejarem evoluir para o Programa Exclusivo poderão ter parte do investimento considerado na continuidade do processo.",
     cta: "Iniciar Jornada Essencial",
-    waMsg: "Olá Marlene! Gostaria de iniciar a Jornada Essencial. Como funciona?",
+    waMsg: "Olá Marlene! Gostaria de iniciar a Jornada Essencial de Reconstrução 40+. Como funciona?",
     icon: Heart,
   },
   {
-    title: "Atendimentos Individuais",
-    subtitle: "Terapia Clínica Integrativa",
+    title: "Atendimentos Individuais Terapêuticos",
+    subtitle: "Atuação Clínica Integrativa",
     badge: "",
-    description: "Atuação clínica integrativa voltada ao cuidado contínuo da saúde mental e manejo de questões emocionais específicas.",
-    features: ["Psicanálise Clínica", "Terapia Sistêmica", "Hipnoterapia", "Constelação Familiar"],
-    note: "Indicado para acompanhamento contínuo em saúde mental e momentos de transição.",
-    cta: "Agendar Atendimento",
-    waMsg: "Olá Marlene! Gostaria de agendar um atendimento individual. Qual é a disponibilidade?",
+    description: "Atuação clínica integrativa voltada ao cuidado contínuo da saúde mental e manejo de questões emocionais específicas. Atendo mulheres e homens em diferentes fases da vida, com abordagem personalizada.",
+    features: ["Psicanálise Clínica", "Terapia Sistêmica", "Hipnoterapia", "Constelação Familiar", "Contoterapia", "Ferramentas complementares de autoconhecimento"],
+    note: "Indicado para acompanhamento contínuo em saúde mental, momentos de transição ou suporte complementar aos programas estruturados.",
+    cta: "Agendar Atendimento Individual",
+    waMsg: "Olá Marlene! Gostaria de agendar um atendimento individual terapêutico. Qual é a disponibilidade?",
     icon: Brain,
   },
 ];
@@ -314,14 +314,15 @@ function Corporate() {
           </div>
           <div>
             <div className="w-16 h-[3px] bg-secondary mb-6" />
-            <h2 className="font-display text-3xl md:text-4xl text-primary font-semibold mb-4">Saúde Mental Corporativa</h2>
+            <p className="text-xs font-bold tracking-[0.15em] uppercase text-secondary mb-3">Saúde Mental Corporativa</p>
+            <h2 className="font-display text-3xl md:text-4xl text-primary font-semibold mb-4">Programas Corporativos em Saúde Mental & NR-1</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Programas Corporativos em Saúde Mental & NR-1. Atuação estratégica para empresas com foco em prevenção de riscos psicossociais e implementação de programas contínuos de saúde mental.
+              Atuação estratégica para empresas com foco em prevenção de riscos psicossociais e implementação de programas contínuos de saúde mental em conformidade com o Ministério do Trabalho.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Conformidade com o Ministério do Trabalho. Com +20 anos de experiência no mercado corporativo, uno conhecimento organizacional à prática clínica para oferecer soluções técnicas e humanizadas.
+              Com +20 anos de experiência no mercado corporativo, incluindo atuação como gerente de serviços no ramo de prestação de serviços em Recursos Humanos em empresa multinacional, uno conhecimento organizacional à prática clínica para oferecer soluções técnicas e humanizadas.
             </p>
-            <h3 className="font-display text-lg font-semibold text-foreground mb-4">O que está incluído:</h3>
+            <h3 className="font-display text-lg font-semibold text-foreground mb-4">Inclui:</h3>
             <ul className="space-y-3 mb-8">
               {features.map((f, i) => (
                 <li key={i} className="flex items-center gap-3 text-foreground/80">
@@ -335,7 +336,7 @@ function Corporate() {
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground font-semibold text-sm px-7 py-3 tracking-wide uppercase shadow-md hover:shadow-lg hover:brightness-105 active:scale-[0.97] transition-all duration-200"
             >
-              Solicitar Proposta
+              Solicitar Proposta Corporativa
             </a>
           </div>
         </div>
