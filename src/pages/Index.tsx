@@ -93,15 +93,15 @@ function Hero() {
     <header ref={ref} className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div className={`space-y-6 transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`} style={{ filter: visible ? "blur(0)" : "blur(4px)" }}>
-          <p className="text-xs font-bold tracking-[0.2em] uppercase text-secondary">Transformação & Propósito</p>
+          <p className="text-xs font-bold tracking-[0.2em] uppercase text-secondary">Saúde Mental e Reconstrução Profissional</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-[3.4rem] font-semibold text-primary leading-[1.1] text-wrap-balance">
-            Reconstruir Identidade, Assumir Potência
+            Saúde Mental e Reconstrução Profissional para Mulheres 40+
           </h1>
           <p className="text-xs font-bold tracking-[0.15em] uppercase text-secondary/80">
             Marlene Corrêa — Psicanalista Clínica e Mentora Estratégica
           </p>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-            Saúde Mental e Reconstrução Profissional para Mulheres 40+. Rompa padrões, ressignifique sua história e reconstrua carreira com propósito, maturidade emocional e direção.
+            Profissional em saúde mental como psicanalista clínica e mentora estratégica, criadora do Programa Exclusivo de Reconstrução 40+, conduzo mulheres que desejam romper padrões, ressignificar sua história e reconstruir carreira com propósito, maturidade emocional e direção.
           </p>
           <div className="pt-2 space-y-2">
             <p className="text-foreground/70 text-sm">Não é apenas sobre mudança profissional.</p>
