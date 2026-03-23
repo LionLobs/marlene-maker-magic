@@ -477,7 +477,7 @@ function Footer() {
         </div>
         <div className="border-t border-primary-foreground/15 pt-6 text-center flex flex-col items-center gap-4">
           {/* Logo no lugar do nome Marlene Corrêa */}
-          <img src="/logo-cliente.PNG" alt="Logo Marlene Corrêa" className="h-12 w-auto opacity-80" />
+          <img src="/logo-branca.png" alt="Logo Marlene Corrêa" className="h-12 w-auto opacity-80" />
           <p className="text-xs text-primary-foreground/50">© {new Date().getFullYear()} Criado por LionLobs. Todos os direitos reservados.</p>
         </div>
       </div>
