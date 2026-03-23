@@ -457,26 +457,29 @@ function Footer() {
             <a href="https://wa.me/5511973356733" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               <Phone size={14} /> (11) 97335-6733
             </a>
-            <a href="mailto:contato@marlenecorrea.com.br" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-              <Mail size={14} /> contato@marlenecorrea.com.br
+            <a href="email:macorrea.psi@gmail.com" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <Mail size={14} /> macorrea.psi@gmail.com
             </a>
           </div>
-          <div className="space-y-3">
+        <div className="space-y-3">
             <p className="font-semibold text-sm uppercase tracking-wider text-primary-foreground/80">Redes Sociais</p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
+              {/* Instagram Atualizado */}
+              <a href="https://www.instagram.com/macorrea.psicoterapia" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
-                <Linkedin size={16} />
+              {/* WhatsApp */}
+              <a href="https://wa.me/5511973356733" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
+                <Phone size={16} />
               </a>
             </div>
           </div>
         </div>
-        <div className="border-t border-primary-foreground/15 pt-6 text-center">
-          <p className="text-xs text-primary-foreground/50">© {new Date().getFullYear()} Marlene Corrêa. Todos os direitos reservados.</p>
+        <div className="border-t border-primary-foreground/15 pt-6 text-center flex flex-col items-center gap-4">
+          {/* Logo no Rodapé */}
+          <img src="/logo-cliente.PNG" alt="Logo Marlene Corrêa" className="h-12 w-auto opacity-80" />
+          <p className="text-xs text-primary-foreground/50">© {new Date().getFullYear()} Todos os direitos reservados.</p>
         </div>
-      </div>
     </footer>
   );
 }
